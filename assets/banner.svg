@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
+  <title id="t">Aliandy Jimenez — Full-Stack Developer</title>
+  <desc id="d">A giraffe reaching for acacia leaves at sunset on the savanna.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7B3"/>
+      <stop offset="0.65" stop-color="#FBC66E"/>
+      <stop offset="1" stop-color="#F0A64A"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFF6DD"/>
+      <stop offset="0.7" stop-color="#FFE0A0"/>
+      <stop offset="1" stop-color="#FFE0A0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="giraffeSkin">
+      <ellipse cx="880" cy="212" rx="72" ry="33"/>
+      <polygon points="912,196 950,206 1002,98 978,84"/>
+    </clipPath>
+    <style>
+      .neck { transform-box: view-box; transform-origin: 930px 205px; animation: munch 5s ease-in-out infinite; }
+      .tail { transform-box: view-box; transform-origin: 810px 200px; animation: swish 2.4s ease-in-out infinite; }
+      .eye  { transform-box: fill-box; transform-origin: center; animation: blink 4.5s infinite; }
+      .leaf { transform-box: view-box; transform-origin: 1070px 80px; animation: rustle 5s ease-in-out infinite; }
+      .cloud1 { animation: drift 38s linear infinite; }
+      .cloud2 { animation: drift 52s linear infinite; animation-delay: -20s; }
+      .title  { animation: rise .9s ease-out both; }
+      .sub    { animation: rise .9s ease-out .25s both; }
+      .tag    { animation: rise .9s ease-out .5s both; }
+      @keyframes munch { 0%,100% { transform: rotate(0deg); } 45% { transform: rotate(-4deg); } 55% { transform: rotate(-3deg); } }
+      @keyframes swish { 0%,100% { transform: rotate(6deg); } 50% { transform: rotate(-10deg); } }
+      @keyframes blink { 0%,92%,100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+      @keyframes rustle { 0%,100% { transform: rotate(0deg); } 45% { transform: rotate(-1.2deg); } }
+      @keyframes drift { from { transform: translateX(-300px); } to { transform: translateX(1300px); } }
+      @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+  </defs>
+
+  <!-- sky, sun, clouds -->
+  <rect width="1200" height="320" fill="url(#sky)"/>
+  <circle cx="760" cy="200" r="130" fill="url(#sun)"/>
+  <circle cx="760" cy="200" r="58" fill="#FFF1CF"/>
+  <g class="cloud1" fill="#FFF8E8" opacity="0.75">
+    <ellipse cx="120" cy="60" rx="46" ry="12"/><ellipse cx="150" cy="52" rx="28" ry="12"/>
+  </g>
+  <g class="cloud2" fill="#FFF8E8" opacity="0.6">
+    <ellipse cx="300" cy="96" rx="60" ry="11"/><ellipse cx="330" cy="88" rx="30" ry="11"/>
+  </g>
+
+  <!-- distant hills -->
+  <path d="M0 262 Q 180 236 360 256 T 720 250 T 1200 246 V320 H0Z" fill="#D9893A" opacity="0.55"/>
+
+  <!-- acacia tree -->
+  <path d="M1068 292 C1066 230 1062 170 1072 112 M1070 160 C1050 135 1030 118 1008 104 M1071 140 C1095 118 1120 104 1150 96" stroke="#5B3A1C" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <g class="leaf" fill="#6E8B3D">
+    <ellipse cx="1070" cy="84" rx="120" ry="22"/>
+    <ellipse cx="1020" cy="96" rx="58" ry="14"/>
+    <ellipse cx="1130" cy="92" rx="66" ry="15"/>
+    <ellipse cx="1080" cy="70" rx="70" ry="14" fill="#7F9D47"/>
+  </g>
+
+  <!-- ground -->
+  <path d="M0 288 Q 300 278 600 286 T 1200 284 V320 H0Z" fill="#B8742F"/>
+  <g fill="#8E5A24" opacity="0.6">
+    <path d="M90 290 l4 -14 l3 14z"/><path d="M98 290 l3 -10 l3 10z"/>
+    <path d="M520 292 l4 -12 l3 12z"/><path d="M640 289 l3 -13 l3 13z"/>
+    <path d="M1150 287 l4 -12 l3 12z"/>
+  </g>
+
+  <!-- giraffe -->
+  <g id="giraffe">
+    <!-- far legs -->
+    <g fill="#D89A45">
+      <rect x="843" y="230" width="10" height="58" rx="4"/>
+      <rect x="922" y="230" width="10" height="58" rx="4"/>
+    </g>
+    <g class="tail">
+      <path d="M810 200 Q 796 226 800 248" stroke="#C4832F" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M800 246 q -6 10 0 16 q 6 -6 0 -16z" fill="#5B3A1C"/>
+    </g>
+    <!-- body -->
+    <ellipse cx="880" cy="212" rx="72" ry="33" fill="#F2B85A"/>
+    <!-- near legs -->
+    <g fill="#F2B85A">
+      <rect x="826" y="232" width="11" height="58" rx="4"/>
+      <rect x="905" y="232" width="11" height="58" rx="4"/>
+    </g>
+    <g fill="#5B3A1C">
+      <rect x="826" y="284" width="11" height="6" rx="2"/><rect x="905" y="284" width="11" height="6" rx="2"/>
+      <rect x="843" y="282" width="10" height="6" rx="2"/><rect x="922" y="282" width="10" height="6" rx="2"/>
+    </g>
+
+    <g class="neck">
+      <!-- neck -->
+      <polygon points="912,196 950,206 1002,98 978,84" fill="#F2B85A"/>
+      <!-- mane -->
+      <path d="M914 194 L 978 84" stroke="#8B5A2B" stroke-width="5" stroke-linecap="round" stroke-dasharray="6 4"/>
+      <!-- spots on neck + body share the clip -->
+      <g clip-path="url(#giraffeSkin)" fill="#A4622A">
+        <path d="M830 192 l18 -8 l14 10 l-6 16 l-20 2z"/>
+        <path d="M868 186 l20 -2 l8 14 l-14 12 l-16 -8z"/>
+        <path d="M906 192 l16 2 l4 16 l-16 8 l-10 -12z"/>
+        <path d="M842 216 l18 -2 l8 16 l-16 10 l-14 -10z"/>
+        <path d="M880 214 l18 2 l4 16 l-18 8 l-10 -12z"/>
+        <path d="M916 220 l14 4 l0 14 l-14 4 l-6 -12z"/>
+        <path d="M816 214 l12 0 l4 14 l-12 6 l-8 -10z"/>
+        <path d="M934 182 l12 4 l-2 12 l-12 2 l-4 -10z"/>
+        <path d="M948 156 l12 2 l-2 12 l-12 0 l-2 -8z"/>
+        <path d="M962 128 l11 2 l-2 11 l-11 0 l-1 -8z"/>
+        <path d="M978 104 l9 2 l-2 9 l-9 -1z"/>
+        <path d="M930 196 l9 -6 l8 4 l-4 8 l-9 0z"/>
+      </g>
+      <!-- head -->
+      <g>
+        <path d="M972 86 C 980 70 1000 66 1014 74 L 1034 84 C 1040 88 1038 98 1030 100 L 1004 102 C 990 104 976 98 972 86z" fill="#F2B85A"/>
+        <ellipse cx="1030" cy="92" rx="9" ry="8" fill="#E3A048"/>
+        <circle cx="1034" cy="90" r="1.6" fill="#5B3A1C"/>
+        <!-- ossicones -->
+        <path d="M986 74 L 982 56 M 996 72 L 994 54" stroke="#C4832F" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="982" cy="54" r="4" fill="#5B3A1C"/><circle cx="994" cy="52" r="4" fill="#5B3A1C"/>
+        <!-- ear -->
+        <ellipse cx="976" cy="80" rx="10" ry="4" transform="rotate(-25 976 80)" fill="#E3A048"/>
+        <!-- eye -->
+        <ellipse class="eye" cx="1002" cy="80" rx="3.2" ry="3.6" fill="#3A2310"/>
+        <circle cx="1003" cy="79" r="1" fill="#FFFFFF"/>
+        <!-- cheek spot + smile -->
+        <circle cx="1012" cy="92" r="4" fill="#F7A98A" opacity="0.55"/>
+        <path d="M1022 99 q 6 3 10 0" stroke="#5B3A1C" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- text -->
+  <g font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">
+    <text class="title" x="60" y="128" font-size="56" font-weight="800" fill="#4A2C13">Aliandy Jimenez</text>
+    <text class="sub" x="62" y="170" font-size="24" font-weight="600" fill="#7A4A1E">Full-Stack Developer · .NET · Java · JavaScript</text>
+    <g class="tag">
+      <rect x="60" y="192" rx="14" width="356" height="30" fill="#4A2C13" opacity="0.88"/>
+      <text x="78" y="213" font-size="15" font-weight="600" fill="#FFE7B3">Software Development Student @ ITLA 🇩🇴</text>
+    </g>
+  </g>
+</svg>
