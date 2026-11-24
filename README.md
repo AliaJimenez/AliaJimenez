@@ -22,13 +22,13 @@
 
 **ES** — Soy estudiante de Desarrollo de Software en el **ITLA** y me gusta construir productos completos: desde la base de datos y la API hasta la interfaz que la gente usa. Mi fuerte es el backend con **C# / .NET** y **Java**, y desarrollo frontends con **JavaScript y React**. También disfruto el lado DevOps — pipelines CI/CD, Docker y Ansible — porque el buen software debe ser fácil de probar y desplegar.
 
-```yaml
-giraffe_mode:
-  current_focus:  "Full-stack .NET + React · CI/CD"
-  learning:       ["ASP.NET Core", "Cloud deployment", "Testing"]
-  achievements:   ["NASA Space Apps 2026 — Heartbeat", "🏆 3rd place — BattleCode Arena (ITLA)"]
-  fun_fact:       "Giraffes have been my favorite animal since I was a kid 🦒"
-```
+<table align="center"><tr>
+<td>🎯 <b>Current focus · Enfoque actual</b><br/>Full-stack .NET + React · CI/CD</td>
+<td>🌱 <b>Learning · Aprendiendo</b><br/>ASP.NET Core · Cloud deployment · Testing</td>
+</tr><tr>
+<td>🏆 <b>Achievements · Logros</b><br/>NASA Space Apps 2026 — Heartbeat<br/>3rd place — BattleCode Arena (ITLA)</td>
+<td>🦒 <b>Fun fact · Dato curioso</b><br/>Giraffes have been my favorite animal since I was a kid<br/><i>Las jirafas son mi animal favorito desde pequeña</i></td>
+</tr></table>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
